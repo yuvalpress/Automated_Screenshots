@@ -1,0 +1,1 @@
+﻿.\Files\psexec.exe -u administrator -pw Rel7.xPass! cmd /c "racadm -r $($args[0]) -u root -p Customer1! closessn -a"

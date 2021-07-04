@@ -1,0 +1,65 @@
+echo hostname
+hostname 
+
+echo ----------------------------------------------------
+
+echo ifconfig -a
+ifconfig -a
+
+echo ----------------------------------------------------
+
+echo yum repolist
+yum repolist
+
+echo ----------------------------------------------------
+
+echo lsblk
+lsblk
+
+echo ----------------------------------------------------
+
+echo cat /etc/resolv.conf
+cat /etc/resolv.conf
+
+echo ----------------------------------------------------
+
+echo cat /etc/chrony.conf
+cat /etc/chrony.conf
+
+echo ----------------------------------------------------
+
+echo cat /etc/sysconfig/network-scripts/ifcfg-em1
+cat /etc/sysconfig/network-scripts/ifcfg-em1
+
+echo ----------------------------------------------------
+
+echo "for i in $(ls /etc/*release); do echo ===$i===; cat $i; done"
+for i in $(ls /etc/*release); do echo ===$i===; cat $i; done
+
+echo ----------------------------------------------------
+
+echo date
+date
+
+echo ----------------------------------------------------
+
+echo mv /etc/localtime /etc/localtime.backup
+mv /etc/localtime /etc/localtime.backup
+
+echo ----------------------------------------------------
+
+echo ln -s /usr/share/zoneinfo/UTC /etc/localtime
+ln -s /usr/share/zoneinfo/UTC /etc/localtime
+
+echo ----------------------------------------------------
+
+echo "echo '"=UTC"' > /etc/sysconfig/clock"
+echo '"=UTC"' > /etc/sysconfig/clock
+
+echo ----------------------------------------------------
+
+echo cat /etc/sysconfig/clock
+cat /etc/sysconfig/clock
+
+echo ----------------------------------------------------
+echo End Of Validation

@@ -1,0 +1,386 @@
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \ValidationReport.log
+Log started at: 2020/09/21 22:11:23.
+***************************************************************************************************
+2020/09/21 22:11:23 INFO	Verify.ps1:(167) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/21 22:11:51 INFO	GenericFuncs.ps1:(250) Importing module Hyper-V
+2020/09/21 22:11:52 INFO	Verify.ps1:(46) Performing post-installation verification on Excel file: C:\Users\Admin\Desktop\Freedom_HVIM .xlsm
+2020/09/21 22:11:52 INFO	VerifyEnvironment.ps1:(98) Verifying Environment.
+2020/09/21 22:11:52 WARNING	VerifyEnvironment.ps1:(107) Can't verify environment, since MPS configuration is missing or disabled in Excel VMs tab.
+2020/09/21 22:11:53 INFO	VerifyHosts.ps1:(170) Verifying Hyper-V hosts configuration.
+2020/09/21 22:11:53 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS01'
+2020/09/21 22:11:53 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.183'.
+2020/09/21 22:11:53 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:11:54 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:11:54 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:11:54 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS01' Memory.
+2020/09/21 22:11:54 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS01' Memory: 31.63GB.
+2020/09/21 22:11:54 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS01' CPU cores.
+2020/09/21 22:11:57 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS01' CPU cores: 16.
+2020/09/21 22:11:57 INFO	VerifyHosts.ps1:(87) Checking host 'HVS01' partitions.
+2020/09/21 22:12:02 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:12:03 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:12:13 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:12:14 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS02'
+2020/09/21 22:12:15 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.184'.
+2020/09/21 22:12:15 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:12:15 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:12:15 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:12:15 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS02' Memory.
+2020/09/21 22:12:16 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS02' Memory: 31.63GB.
+2020/09/21 22:12:16 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS02' CPU cores.
+2020/09/21 22:12:18 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS02' CPU cores: 16.
+2020/09/21 22:12:18 INFO	VerifyHosts.ps1:(87) Checking host 'HVS02' partitions.
+2020/09/21 22:12:20 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:12:22 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:12:32 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:12:32 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/21 22:12:32 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/21 22:12:32 INFO	VerifyVMs.ps1:(319) Verify VM 'SDC1'
+2020/09/21 22:12:32 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.179'.
+2020/09/21 22:12:34 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:12:34 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:12:34 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:12:34 INFO	VerifyVMs.ps1:(6) Checking VM 'SDC1' Memory.
+2020/09/21 22:12:35 SUCCESS	VerifyVMs.ps1:(19) VM 'SDC1' Memory: 4GB.
+2020/09/21 22:12:35 INFO	VerifyVMs.ps1:(29) Checking VM 'SDC1' CPU cores.
+2020/09/21 22:12:36 SUCCESS	VerifyVMs.ps1:(40) VM 'SDC1' CPU cores: 4.
+2020/09/21 22:12:36 INFO	VerifyVMs.ps1:(82) Checking VM 'SDC1' partitions.
+2020/09/21 22:12:39 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:12:43 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:12:43 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:12:44 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:12:45 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:12:46 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/21 22:12:46 INFO	VerifyVMs.ps1:(319) Verify VM 'GSA1'
+2020/09/21 22:12:46 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.180'.
+2020/09/21 22:12:47 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:12:47 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:12:47 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:12:48 INFO	VerifyVMs.ps1:(6) Checking VM 'GSA1' Memory.
+2020/09/21 22:12:48 SUCCESS	VerifyVMs.ps1:(19) VM 'GSA1' Memory: 8GB.
+2020/09/21 22:12:48 INFO	VerifyVMs.ps1:(29) Checking VM 'GSA1' CPU cores.
+2020/09/21 22:12:50 SUCCESS	VerifyVMs.ps1:(40) VM 'GSA1' CPU cores: 6.
+2020/09/21 22:12:50 INFO	VerifyVMs.ps1:(82) Checking VM 'GSA1' partitions.
+2020/09/21 22:12:56 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:13:00 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:13:00 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:13:01 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:13:08 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:13:08 INFO	VerifyVMs.ps1:(319) Verify VM 'UMD1'
+2020/09/21 22:13:08 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.181'.
+2020/09/21 22:13:09 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:13:09 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:13:09 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:13:10 INFO	VerifyVMs.ps1:(6) Checking VM 'UMD1' Memory.
+2020/09/21 22:13:10 SUCCESS	VerifyVMs.ps1:(19) VM 'UMD1' Memory: 4GB.
+2020/09/21 22:13:10 INFO	VerifyVMs.ps1:(29) Checking VM 'UMD1' CPU cores.
+2020/09/21 22:13:12 SUCCESS	VerifyVMs.ps1:(40) VM 'UMD1' CPU cores: 4.
+2020/09/21 22:13:12 INFO	VerifyVMs.ps1:(82) Checking VM 'UMD1' partitions.
+2020/09/21 22:13:17 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:13:21 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:13:21 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:13:23 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:13:29 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+***************************************************************************************************
+Log ended at: 2020/09/21 22:13:29.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \ValidationReport.log
+Log started at: 2020/09/21 22:16:01.
+***************************************************************************************************
+2020/09/21 22:16:01 INFO	Verify.ps1:(167) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/21 22:16:07 INFO	GenericFuncs.ps1:(250) Importing module Hyper-V
+2020/09/21 22:16:07 INFO	Verify.ps1:(46) Performing post-installation verification on Excel file: C:\Users\Admin\Desktop\Freedom_HVIM .xlsm
+2020/09/21 22:16:08 INFO	VerifyEnvironment.ps1:(98) Verifying Environment.
+2020/09/21 22:16:08 INFO	VerifyEnvironment.ps1:(7) Checking if domain 'sg.freedom.com' exists.
+2020/09/21 22:16:28 INFO	VerifyEnvironment.ps1:(32) Checking if 'MPS1' VM exists.
+2020/09/21 22:16:29 INFO	VerifyEnvironment.ps1:(58) Checking if Cluster 'HyperVCluster' exists.
+2020/09/21 22:16:29 INFO	VerifyHosts.ps1:(170) Verifying Hyper-V hosts configuration.
+2020/09/21 22:16:29 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS01'
+2020/09/21 22:16:30 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.183'.
+2020/09/21 22:16:30 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:16:30 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:16:30 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:16:30 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS01' Memory.
+2020/09/21 22:16:30 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS01' Memory: 31.63GB.
+2020/09/21 22:16:30 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS01' CPU cores.
+2020/09/21 22:16:33 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS01' CPU cores: 16.
+2020/09/21 22:16:33 INFO	VerifyHosts.ps1:(87) Checking host 'HVS01' partitions.
+2020/09/21 22:16:34 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:16:35 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:16:45 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:16:45 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS02'
+2020/09/21 22:16:46 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.184'.
+2020/09/21 22:16:46 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:16:46 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:16:46 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:16:46 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS02' Memory.
+2020/09/21 22:16:46 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS02' Memory: 31.63GB.
+2020/09/21 22:16:46 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS02' CPU cores.
+2020/09/21 22:16:49 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS02' CPU cores: 16.
+2020/09/21 22:16:49 INFO	VerifyHosts.ps1:(87) Checking host 'HVS02' partitions.
+2020/09/21 22:16:50 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:16:51 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:17:01 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:17:01 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/21 22:17:01 INFO	VerifyVMs.ps1:(319) Verify VM 'MPS1'
+2020/09/21 22:17:01 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.178'.
+2020/09/21 22:17:02 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:17:02 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:17:02 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:17:02 INFO	VerifyVMs.ps1:(6) Checking VM 'MPS1' Memory.
+2020/09/21 22:17:03 SUCCESS	VerifyVMs.ps1:(19) VM 'MPS1' Memory: 8GB.
+2020/09/21 22:17:03 INFO	VerifyVMs.ps1:(29) Checking VM 'MPS1' CPU cores.
+2020/09/21 22:17:04 SUCCESS	VerifyVMs.ps1:(40) VM 'MPS1' CPU cores: 6.
+2020/09/21 22:17:04 INFO	VerifyVMs.ps1:(82) Checking VM 'MPS1' partitions.
+2020/09/21 22:17:08 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:17:10 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:17:11 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:17:12 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:17:13 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:17:13 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/21 22:17:13 INFO	VerifyVMs.ps1:(319) Verify VM 'SDC1'
+2020/09/21 22:17:13 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.179'.
+2020/09/21 22:17:13 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:17:13 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:17:14 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:17:14 INFO	VerifyVMs.ps1:(6) Checking VM 'SDC1' Memory.
+2020/09/21 22:17:14 SUCCESS	VerifyVMs.ps1:(19) VM 'SDC1' Memory: 4GB.
+2020/09/21 22:17:14 INFO	VerifyVMs.ps1:(29) Checking VM 'SDC1' CPU cores.
+2020/09/21 22:17:16 SUCCESS	VerifyVMs.ps1:(40) VM 'SDC1' CPU cores: 4.
+2020/09/21 22:17:16 INFO	VerifyVMs.ps1:(82) Checking VM 'SDC1' partitions.
+2020/09/21 22:17:17 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:17:19 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:17:19 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:17:20 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:17:21 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:17:21 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/21 22:17:21 INFO	VerifyVMs.ps1:(319) Verify VM 'GSA1'
+2020/09/21 22:17:21 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.180'.
+2020/09/21 22:17:22 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:17:22 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:17:22 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:17:22 INFO	VerifyVMs.ps1:(6) Checking VM 'GSA1' Memory.
+2020/09/21 22:17:23 SUCCESS	VerifyVMs.ps1:(19) VM 'GSA1' Memory: 8GB.
+2020/09/21 22:17:23 INFO	VerifyVMs.ps1:(29) Checking VM 'GSA1' CPU cores.
+2020/09/21 22:17:24 SUCCESS	VerifyVMs.ps1:(40) VM 'GSA1' CPU cores: 6.
+2020/09/21 22:17:24 INFO	VerifyVMs.ps1:(82) Checking VM 'GSA1' partitions.
+2020/09/21 22:17:25 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:17:28 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:17:28 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:17:29 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:17:34 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/21 22:17:34 INFO	VerifyVMs.ps1:(319) Verify VM 'UMD1'
+2020/09/21 22:17:34 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.181'.
+2020/09/21 22:17:35 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/21 22:17:35 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/21 22:17:35 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/21 22:17:35 INFO	VerifyVMs.ps1:(6) Checking VM 'UMD1' Memory.
+2020/09/21 22:17:35 SUCCESS	VerifyVMs.ps1:(19) VM 'UMD1' Memory: 4GB.
+2020/09/21 22:17:35 INFO	VerifyVMs.ps1:(29) Checking VM 'UMD1' CPU cores.
+2020/09/21 22:17:37 SUCCESS	VerifyVMs.ps1:(40) VM 'UMD1' CPU cores: 4.
+2020/09/21 22:17:37 INFO	VerifyVMs.ps1:(82) Checking VM 'UMD1' partitions.
+2020/09/21 22:17:38 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/21 22:17:40 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/21 22:17:40 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/21 22:17:41 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/21 22:17:47 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+***************************************************************************************************
+Log ended at: 2020/09/21 22:17:47.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \ValidationReport.log
+Log started at: 2020/09/22 13:24:05.
+***************************************************************************************************
+2020/09/22 13:24:05 INFO	Verify.ps1:(167) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/22 13:24:12 INFO	GenericFuncs.ps1:(250) Importing module Hyper-V
+2020/09/22 13:24:12 INFO	Verify.ps1:(46) Performing post-installation verification on Excel file: C:\Users\Admin\Desktop\Freedom_HVIM .xlsm
+2020/09/22 13:24:13 INFO	VerifyEnvironment.ps1:(98) Verifying Environment.
+2020/09/22 13:24:13 INFO	VerifyEnvironment.ps1:(7) Checking if domain 'sg.freedom.com' exists.
+2020/09/22 13:24:17 INFO	VerifyEnvironment.ps1:(32) Checking if 'MPS1' VM exists.
+2020/09/22 13:24:18 INFO	VerifyEnvironment.ps1:(58) Checking if Cluster 'HyperVCluster' exists.
+2020/09/22 13:24:18 INFO	VerifyHosts.ps1:(170) Verifying Hyper-V hosts configuration.
+2020/09/22 13:24:18 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS01'
+2020/09/22 13:24:18 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.183'.
+2020/09/22 13:24:18 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:24:18 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:24:18 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:24:18 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS01' Memory.
+2020/09/22 13:24:19 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS01' Memory: 31.63GB.
+2020/09/22 13:24:19 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS01' CPU cores.
+2020/09/22 13:24:21 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS01' CPU cores: 16.
+2020/09/22 13:24:21 INFO	VerifyHosts.ps1:(87) Checking host 'HVS01' partitions.
+2020/09/22 13:24:25 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:24:26 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:24:36 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:24:36 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS02'
+2020/09/22 13:24:37 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.184'.
+2020/09/22 13:24:37 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:24:37 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:24:37 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:24:37 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS02' Memory.
+2020/09/22 13:24:37 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS02' Memory: 31.63GB.
+2020/09/22 13:24:37 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS02' CPU cores.
+2020/09/22 13:24:40 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS02' CPU cores: 16.
+2020/09/22 13:24:40 INFO	VerifyHosts.ps1:(87) Checking host 'HVS02' partitions.
+2020/09/22 13:24:41 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:24:42 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:24:52 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:24:52 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/22 13:24:52 INFO	VerifyVMs.ps1:(319) Verify VM 'MPS1'
+2020/09/22 13:24:52 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.178'.
+2020/09/22 13:24:53 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:24:53 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:24:53 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:24:53 INFO	VerifyVMs.ps1:(6) Checking VM 'MPS1' Memory.
+2020/09/22 13:24:54 SUCCESS	VerifyVMs.ps1:(19) VM 'MPS1' Memory: 8GB.
+2020/09/22 13:24:54 INFO	VerifyVMs.ps1:(29) Checking VM 'MPS1' CPU cores.
+2020/09/22 13:24:55 SUCCESS	VerifyVMs.ps1:(40) VM 'MPS1' CPU cores: 6.
+2020/09/22 13:24:55 INFO	VerifyVMs.ps1:(82) Checking VM 'MPS1' partitions.
+2020/09/22 13:24:58 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:25:01 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:25:01 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/22 13:25:02 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:25:03 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:25:03 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/22 13:25:03 INFO	VerifyVMs.ps1:(319) Verify VM 'SDC1'
+2020/09/22 13:25:03 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.179'.
+2020/09/22 13:25:07 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:25:08 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:25:08 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:25:08 INFO	VerifyVMs.ps1:(6) Checking VM 'SDC1' Memory.
+2020/09/22 13:25:09 SUCCESS	VerifyVMs.ps1:(19) VM 'SDC1' Memory: 4GB.
+2020/09/22 13:25:09 INFO	VerifyVMs.ps1:(29) Checking VM 'SDC1' CPU cores.
+2020/09/22 13:25:10 SUCCESS	VerifyVMs.ps1:(40) VM 'SDC1' CPU cores: 4.
+2020/09/22 13:25:10 INFO	VerifyVMs.ps1:(82) Checking VM 'SDC1' partitions.
+2020/09/22 13:25:14 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:25:17 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:25:17 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/22 13:25:19 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:25:20 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:25:20 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/22 13:25:20 INFO	VerifyVMs.ps1:(319) Verify VM 'GSA1'
+2020/09/22 13:25:20 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.180'.
+2020/09/22 13:25:26 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:25:27 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:25:27 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:25:28 INFO	VerifyVMs.ps1:(6) Checking VM 'GSA1' Memory.
+2020/09/22 13:25:28 SUCCESS	VerifyVMs.ps1:(19) VM 'GSA1' Memory: 8GB.
+2020/09/22 13:25:28 INFO	VerifyVMs.ps1:(29) Checking VM 'GSA1' CPU cores.
+2020/09/22 13:25:30 SUCCESS	VerifyVMs.ps1:(40) VM 'GSA1' CPU cores: 6.
+2020/09/22 13:25:30 INFO	VerifyVMs.ps1:(82) Checking VM 'GSA1' partitions.
+2020/09/22 13:25:33 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:25:36 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:25:37 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \ValidationReport.log
+Log started at: 2020/09/22 13:34:06.
+***************************************************************************************************
+2020/09/22 13:34:06 INFO	Verify.ps1:(167) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/22 13:34:10 INFO	GenericFuncs.ps1:(250) Importing module Hyper-V
+2020/09/22 13:34:10 INFO	Verify.ps1:(46) Performing post-installation verification on Excel file: C:\Users\Admin\Desktop\Freedom_HVIM .xlsm
+2020/09/22 13:34:10 INFO	VerifyEnvironment.ps1:(98) Verifying Environment.
+2020/09/22 13:34:11 INFO	VerifyEnvironment.ps1:(7) Checking if domain 'sg.freedom.com' exists.
+2020/09/22 13:34:11 INFO	VerifyEnvironment.ps1:(32) Checking if 'MPS1' VM exists.
+2020/09/22 13:34:12 INFO	VerifyEnvironment.ps1:(58) Checking if Cluster 'HyperVCluster' exists.
+2020/09/22 13:34:12 INFO	VerifyHosts.ps1:(170) Verifying Hyper-V hosts configuration.
+2020/09/22 13:34:12 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS01'
+2020/09/22 13:34:12 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.183'.
+2020/09/22 13:34:12 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:34:12 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:34:13 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:34:13 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS01' Memory.
+2020/09/22 13:34:13 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS01' Memory: 31.63GB.
+2020/09/22 13:34:13 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS01' CPU cores.
+2020/09/22 13:34:16 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS01' CPU cores: 16.
+2020/09/22 13:34:16 INFO	VerifyHosts.ps1:(87) Checking host 'HVS01' partitions.
+2020/09/22 13:34:17 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:34:17 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:34:28 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:34:28 INFO	VerifyHosts.ps1:(180) Verify Hyper-V host 'HVS02'
+2020/09/22 13:34:28 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.184'.
+2020/09/22 13:34:28 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:34:28 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:34:28 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:34:29 INFO	VerifyHosts.ps1:(43) Checking VM 'HVS02' Memory.
+2020/09/22 13:34:29 SUCCESS	VerifyHosts.ps1:(56) VM 'HVS02' Memory: 31.63GB.
+2020/09/22 13:34:29 INFO	VerifyHosts.ps1:(66) Checking VM 'HVS02' CPU cores.
+2020/09/22 13:34:32 SUCCESS	VerifyHosts.ps1:(77) VM 'HVS02' CPU cores: 16.
+2020/09/22 13:34:32 INFO	VerifyHosts.ps1:(87) Checking host 'HVS02' partitions.
+2020/09/22 13:34:33 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:34:33 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:34:44 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:34:44 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/22 13:34:44 INFO	VerifyVMs.ps1:(319) Verify VM 'MPS1'
+2020/09/22 13:34:44 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.178'.
+2020/09/22 13:34:44 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:34:44 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:34:44 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:34:45 INFO	VerifyVMs.ps1:(6) Checking VM 'MPS1' Memory.
+2020/09/22 13:34:45 SUCCESS	VerifyVMs.ps1:(19) VM 'MPS1' Memory: 8GB.
+2020/09/22 13:34:45 INFO	VerifyVMs.ps1:(29) Checking VM 'MPS1' CPU cores.
+2020/09/22 13:34:46 SUCCESS	VerifyVMs.ps1:(40) VM 'MPS1' CPU cores: 6.
+2020/09/22 13:34:46 INFO	VerifyVMs.ps1:(82) Checking VM 'MPS1' partitions.
+2020/09/22 13:34:48 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:34:50 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:34:50 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/22 13:34:51 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:34:52 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:34:52 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/22 13:34:52 INFO	VerifyVMs.ps1:(319) Verify VM 'SDC1'
+2020/09/22 13:34:52 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.179'.
+2020/09/22 13:34:53 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:34:53 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:34:53 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:34:53 INFO	VerifyVMs.ps1:(6) Checking VM 'SDC1' Memory.
+2020/09/22 13:34:53 SUCCESS	VerifyVMs.ps1:(19) VM 'SDC1' Memory: 4GB.
+2020/09/22 13:34:53 INFO	VerifyVMs.ps1:(29) Checking VM 'SDC1' CPU cores.
+2020/09/22 13:34:55 SUCCESS	VerifyVMs.ps1:(40) VM 'SDC1' CPU cores: 4.
+2020/09/22 13:34:55 INFO	VerifyVMs.ps1:(82) Checking VM 'SDC1' partitions.
+2020/09/22 13:34:56 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:34:58 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:34:59 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/22 13:35:00 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:35:00 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:35:01 INFO	VerifyVMs.ps1:(308) Verify VMs Excel sheet.
+2020/09/22 13:35:01 INFO	VerifyVMs.ps1:(319) Verify VM 'GSA1'
+2020/09/22 13:35:01 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.180'.
+2020/09/22 13:35:01 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:35:01 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:35:01 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:35:01 INFO	VerifyVMs.ps1:(6) Checking VM 'GSA1' Memory.
+2020/09/22 13:35:01 SUCCESS	VerifyVMs.ps1:(19) VM 'GSA1' Memory: 8GB.
+2020/09/22 13:35:01 INFO	VerifyVMs.ps1:(29) Checking VM 'GSA1' CPU cores.
+2020/09/22 13:35:03 SUCCESS	VerifyVMs.ps1:(40) VM 'GSA1' CPU cores: 6.
+2020/09/22 13:35:03 INFO	VerifyVMs.ps1:(82) Checking VM 'GSA1' partitions.
+2020/09/22 13:35:04 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:35:07 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:35:07 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/22 13:35:12 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:35:18 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+2020/09/22 13:35:18 INFO	VerifyVMs.ps1:(319) Verify VM 'UMD1'
+2020/09/22 13:35:18 INFO	GenVerificationFuncs.ps1:(186) Checking connection to '10.201.41.181'.
+2020/09/22 13:35:20 INFO	GenVerificationFuncs.ps1:(207) Checking Login.
+2020/09/22 13:35:20 INFO	GenVerificationFuncs.ps1:(31) Checking computer hostname.
+2020/09/22 13:35:20 INFO	GenVerificationFuncs.ps1:(53) Checking if computer is in the domain 'sg.freedom.com'.
+2020/09/22 13:35:21 INFO	VerifyVMs.ps1:(6) Checking VM 'UMD1' Memory.
+2020/09/22 13:35:21 SUCCESS	VerifyVMs.ps1:(19) VM 'UMD1' Memory: 4GB.
+2020/09/22 13:35:21 INFO	VerifyVMs.ps1:(29) Checking VM 'UMD1' CPU cores.
+2020/09/22 13:35:22 SUCCESS	VerifyVMs.ps1:(40) VM 'UMD1' CPU cores: 4.
+2020/09/22 13:35:22 INFO	VerifyVMs.ps1:(82) Checking VM 'UMD1' partitions.
+2020/09/22 13:35:27 INFO	GenVerificationFuncs.ps1:(73) Checking if OS is genuine.
+2020/09/22 13:35:29 INFO	GenVerificationFuncs.ps1:(98) Checking if AntiVirus software installed.
+2020/09/22 13:35:30 INFO	GenVerificationFuncs.ps1:(122) Checking if Windows is up to date.
+2020/09/22 13:37:19 INFO	GenVerificationFuncs.ps1:(151) Checking if GPO policies are applied.
+2020/09/22 13:37:26 INFO	GenVerificationFuncs.ps1:(232) Checking time synchronization.
+***************************************************************************************************
+Log ended at: 2020/09/22 13:37:26.
+***************************************************************************************************
+

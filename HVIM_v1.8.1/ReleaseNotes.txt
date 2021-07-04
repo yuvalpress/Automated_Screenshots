@@ -1,0 +1,86 @@
+Version 1.0 - first version
+============
+
+Version 1.2
+============
+1. Ubuntu – Fixed two issues:
+   a)    The vSwitch connection is now configurable.
+   b)    The network configuration should now work without DHCP.
+2. Use VHDXtool to create virtual disks.
+3. Support empty labels in Excel for VM partitions.
+4. Create Cluster network environment.
+5. Added pre-installation validation of the Excel file.
+6. Added batch files for deployment and clear environment.
+7. Added validation for Excel file version.
+8. Create Cluster and add hosts to cluster as nodes
+9. Add VMs to the Cluster
+10. Restart the hosts in parallel.
+11. Changed the way VMs are created using jobs.
+12. Join the two environment variables regarding using jobs to a single variable "UseJobs".
+13. Added a user's manual document to documents folder.
+
+Version 1.3
+============
+1. Added support for Cluster Storage Spaces.
+2. Fixed issue with running the tool from different user name than Administrator with Rel...
+3. Added script name and line number to tool log files.
+
+Version 1.4
+============
+1. Remove VMs instance and PlatformName from HVIM Excel and move ComputerName as the first column.
+2. Added post-deployment validation report tool.
+3. Added NetBios_Name field to the Environment tab
+
+Version 1.5
+============
+1. Some fixes for situation where there is no additional disks and network cards.
+2. Separate HVIM tool version from Excel file version.
+3. Add installation of Posh-SSH from the tool.
+
+Version 1.6
+============
+1. Added support for automatic deployment of SDC (OSP).
+2. Added post installation validation of WSUS, GPO and NTP to the HVIM validation report.
+3. Added validation of Cluster and Live Migration networks.
+
+Version 1.6.1
+=============
+1. Remove validation of domain IP (it caused the validation to fail in case MPS is already deployed).
+2. Fixed problem with secondary DNS validation.
+
+Version 1.6.2
+=============
+1. Fix validation of memory and partition size on Ubuntu.
+2. Fix issue with SSH for Ubuntu.
+3. Fix problem with SDC promote due to delegation of fresh credentials problem.
+
+Version 1.7
+=============
+1. Change zeus password to Nine1One
+2. Handle validation when MPS is not enabled.
+3. Fix issue with Cluster network configuration in production.
+
+Version 1.7.1
+=============
+1. Change the network bandwidth weight for all vNICs to 5.
+2. Set the MAC address range for all servers in advance (before configuring the network). This should fix MAC address conflict.
+
+Version 1.7.2
+=============
+1. Added RAM size and core number check, for Hyper-V hosts.
+2. Added Prerequisites check.
+3. Fix sporadic issue with creating the main network adopter.
+4. Added VC++ 2015 prerequisites to the windows template.
+
+Version 1.8
+=============
+1. Move to Hyper-V Server 2016.
+2. Added a template for Windows Server 2016.
+3. Added support for Windows Server 2016 VM.
+
+Version 1.8.1
+=============
+1. Added name of the person who run the validator to the report.
+2. Added support for central storage.
+3. Added support for joining a VM to specific OU.
+4. Renamed Deploy.bat to DeployAll.bat and added DeployEnv.bat and DeployVMs.bat for partial deployment.

@@ -1,0 +1,2 @@
+echo modinfo i40e
+modinfo -40e

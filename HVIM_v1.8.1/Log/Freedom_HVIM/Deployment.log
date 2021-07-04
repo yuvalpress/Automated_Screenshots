@@ -1,0 +1,1058 @@
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 16:48:42.
+***************************************************************************************************
+2020/09/16 16:48:42 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 16:48:42 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+***************************************************************************************************
+Log ended at: 2020/09/16 16:49:21.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 16:49:36.
+***************************************************************************************************
+2020/09/16 16:49:37 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 16:49:37 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 16:50:41 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 16:50:47 SUCCESS	GenericFuncs.ps1:(438) 'HYPERV' program added to Add/Remove section on host at 'HVS01'!
+2020/09/16 16:50:51 INFO	Hosts.ps1:(247) Configure Hyper-V Host 'HVS01' MAC address range.
+2020/09/16 16:50:53 INFO	Hosts.ps1:(386) Hyper-V Host network will now be configured for Cluster environment.
+2020/09/16 16:50:53 INFO	Hosts.ps1:(410) Hyper-V Host 'HVS01' network will now be configured for Cluster environment.
+2020/09/16 16:50:53 INFO	Hosts.ps1:(411) Configuring teaming, vSwitch and virtual network adapter on host 'HVS01' for 'NIC1' and 'NIC2' for Load Balancing and Fail Over.
+2020/09/16 16:52:11 INFO	Hosts.ps1:(446) Waiting for network settings to be reflected...
+2020/09/16 16:52:16 INFO	Hosts.ps1:(449) Create and configure the Cluster network.
+2020/09/16 16:52:17 INFO	Hosts.ps1:(461) Waiting for network settings to be reflected...
+2020/09/16 16:52:22 INFO	Hosts.ps1:(464) Create and configure the Live Migration network.
+2020/09/16 16:52:24 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 16:52:24 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 16:52:30 SUCCESS	Hosts.ps1:(549) Created partition 'V' on disk 0 with rest of available disk space on host 'HVS01' file system successfully.
+2020/09/16 16:52:30 INFO	Hosts.ps1:(569) Formating volume V on host 'HVS01'.
+2020/09/16 16:52:33 SUCCESS	Hosts.ps1:(576) Successfully Formated volume V on host 'HVS01'.
+2020/09/16 16:52:33 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 16:52:33 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 16:52:34 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 16:52:34 INFO	GenericFuncs.ps1:(462) Copying: D:\Stargate Files\Templates\WindowsServer2016Template.vhdx >> HVS01:\Stuff\Templates
+2020/09/16 17:09:15 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 17:09:15 INFO	GenericFuncs.ps1:(462) Copying: D:\Stargate Files\Templates\Tools\vhdxtool.exe >> HVS01:\Stuff\Templates\Tools
+2020/09/16 17:09:20 SUCCESS	GenericFuncs.ps1:(438) 'HYPERV' program added to Add/Remove section on host at 'HVS02'!
+2020/09/16 17:09:23 INFO	Hosts.ps1:(247) Configure Hyper-V Host 'HVS02' MAC address range.
+2020/09/16 17:09:24 INFO	Hosts.ps1:(386) Hyper-V Host network will now be configured for Cluster environment.
+2020/09/16 17:09:24 INFO	Hosts.ps1:(410) Hyper-V Host 'HVS02' network will now be configured for Cluster environment.
+2020/09/16 17:09:24 INFO	Hosts.ps1:(411) Configuring teaming, vSwitch and virtual network adapter on host 'HVS02' for 'NIC1' and 'NIC2' for Load Balancing and Fail Over.
+2020/09/16 17:10:39 INFO	Hosts.ps1:(446) Waiting for network settings to be reflected...
+2020/09/16 17:10:44 INFO	Hosts.ps1:(449) Create and configure the Cluster network.
+2020/09/16 17:10:45 INFO	Hosts.ps1:(461) Waiting for network settings to be reflected...
+2020/09/16 17:10:50 INFO	Hosts.ps1:(464) Create and configure the Live Migration network.
+2020/09/16 17:10:52 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 17:10:52 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 17:10:58 SUCCESS	Hosts.ps1:(549) Created partition 'V' on disk 0 with rest of available disk space on host 'HVS02' file system successfully.
+2020/09/16 17:10:58 INFO	Hosts.ps1:(569) Formating volume V on host 'HVS02'.
+2020/09/16 17:11:01 SUCCESS	Hosts.ps1:(576) Successfully Formated volume V on host 'HVS02'.
+2020/09/16 17:11:01 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 17:11:02 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:11:02 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 17:11:02 INFO	GenericFuncs.ps1:(462) Copying: D:\Stargate Files\Templates\WindowsServer2016Template.vhdx >> HVS02:\Stuff\Templates
+2020/09/16 17:27:40 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 17:27:40 INFO	GenericFuncs.ps1:(462) Copying: D:\Stargate Files\Templates\Tools\vhdxtool.exe >> HVS02:\Stuff\Templates\Tools
+2020/09/16 17:27:40 INFO	MPSDeploy.ps1:(287) Deployment of MPS Virtual Machine 'MPS1' started.
+2020/09/16 17:27:40 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'MPS1' started.
+2020/09/16 17:27:40 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'MPS1' at 'V:\virtual machines' on host '10.201.41.183'.
+2020/09/16 17:27:44 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'MPS1'.
+2020/09/16 17:27:44 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 17:27:47 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\MPS1\MPS1_C.vhdx of VM 'MPS1'...
+2020/09/16 17:34:11 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'MPS1'.
+2020/09/16 17:34:14 INFO	VMDeploy.ps1:(164) Set 'MPS1_C.vhdx' virtual hard disk to be the first boot device for 'MPS1'.
+2020/09/16 17:34:17 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'MPS1'.
+2020/09/16 17:34:21 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 40GB at V:\virtual machines\MPS1\MPS1_D.vhdx using VHDXTool.
+2020/09/16 17:34:23 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_D.vhdx' to VM 'MPS1'.
+2020/09/16 17:34:26 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 40GB at V:\virtual machines\MPS1\MPS1_E.vhdx using VHDXTool.
+2020/09/16 17:34:29 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_E.vhdx' to VM 'MPS1'.
+2020/09/16 17:34:32 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 100GB at V:\virtual machines\MPS1\MPS1_G.vhdx using VHDXTool.
+2020/09/16 17:34:34 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_G.vhdx' to VM 'MPS1'.
+2020/09/16 17:34:38 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 200GB at V:\virtual machines\MPS1\MPS1_W.vhdx using VHDXTool.
+2020/09/16 17:34:40 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_W.vhdx' to VM 'MPS1'.
+2020/09/16 17:34:47 INFO	GenericFuncs.ps1:(628) Wait for VM 'MPS1' Integration Tools to be ready.
+2020/09/16 17:35:15 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on MPS1.
+2020/09/16 17:35:15 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 17:35:36 INFO	GenericFuncs.ps1:(684) Network interface in VM 'MPS1' is now ready.
+2020/09/16 17:35:36 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'MPS1'.
+2020/09/16 17:35:49 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'MPS1'
+2020/09/16 17:35:49 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'MPS1' at '10.201.41.178'
+2020/09/16 17:35:54 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.178 has been established.
+2020/09/16 17:35:54 INFO	VMDeploy.ps1:(273) Expanding disk C drive partition of VM 'MPS1'.
+2020/09/16 17:35:54 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote 
+                        server 10.201.41.178 failed with the following error message : Access is denied. For more 
+                        information, see the about_Remote_Troubleshooting Help topic.
+TargetObject          : 10.201.41.178
+CategoryInfo          : OpenError: (10.201.41.178:String) [], PSRemotingTransportException
+FullyQualifiedErrorId : AccessDenied,PSSessionStateBroken
+ErrorDetails          : [10.201.41.178] Connecting to remote server 10.201.41.178 failed with the following error 
+                        message : Access is denied. For more information, see the about_Remote_Troubleshooting Help 
+                        topic.
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Create-Partitions, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 274
+                        at Deploy-RegularVM, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 821
+                        at Deploy-MPS, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\MPSDeploy.ps1: line 289
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 194
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 17:35:54.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 17:37:16.
+***************************************************************************************************
+2020/09/16 17:37:16 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 17:37:16 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 17:37:21 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 17:37:23 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 17:37:27 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 17:37:27 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 17:37:27 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 17:37:32 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 17:37:32 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 17:37:32 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:37:32 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 17:37:32 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 17:37:35 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 17:37:38 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 17:37:38 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 17:37:38 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 17:37:43 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 17:37:43 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 17:37:43 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:37:43 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 17:37:43 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 17:37:43 INFO	MPSDeploy.ps1:(287) Deployment of MPS Virtual Machine 'MPS1' started.
+2020/09/16 17:37:43 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'MPS1' started.
+2020/09/16 17:37:43 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'MPS1' at 'V:\virtual machines' on host '10.201.41.183'.
+2020/09/16 17:37:47 WARNING	VMDeploy.ps1:(37) VM with the same name 'MPS1' already exists.
+***************************************************************************************************
+Log ended at: 2020/09/16 17:37:53.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 17:38:45.
+***************************************************************************************************
+2020/09/16 17:38:45 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 17:38:45 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 17:38:49 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 17:38:51 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 17:38:55 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 17:38:55 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 17:38:55 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 17:38:59 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 17:38:59 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 17:38:59 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:38:59 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 17:39:00 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 17:39:02 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 17:39:05 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 17:39:05 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 17:39:05 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 17:39:10 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 17:39:10 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 17:39:10 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:39:10 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 17:39:10 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 17:39:10 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 17:39:10 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 17:39:10 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 17:39:14 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 17:39:16 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 17:39:19 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+***************************************************************************************************
+Log ended at: 2020/09/16 17:39:26.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 17:39:46.
+***************************************************************************************************
+2020/09/16 17:39:46 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 17:39:46 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 17:39:49 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 17:39:52 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 17:39:55 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 17:39:55 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 17:39:55 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 17:40:00 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 17:40:00 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 17:40:00 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:40:00 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 17:40:00 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 17:40:02 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 17:40:06 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 17:40:06 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 17:40:06 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 17:40:10 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 17:40:10 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 17:40:10 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:40:10 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 17:40:11 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 17:40:11 INFO	MPSDeploy.ps1:(287) Deployment of MPS Virtual Machine 'MPS1' started.
+2020/09/16 17:40:11 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'MPS1' started.
+2020/09/16 17:40:11 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'MPS1' at 'V:\virtual machines' on host '10.201.41.183'.
+2020/09/16 17:40:14 WARNING	VMDeploy.ps1:(37) VM with the same name 'MPS1' already exists.
+2020/09/16 17:40:30 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'MPS1'.
+2020/09/16 17:40:30 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 17:40:34 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\MPS1\MPS1_C.vhdx of VM 'MPS1'...
+2020/09/16 17:40:38 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.RemoteException: Failed to convert the virtual disk.
+                        
+                        The system failed to convert 'v:\stuff\templates\windowsserver2016template.vhdx'.
+TargetObject          : 
+CategoryInfo          : NotSpecified: (:) [Convert-VHD], VirtualizationException
+FullyQualifiedErrorId : OperationFailed,Microsoft.Vhd.PowerShell.Cmdlets.ConvertVhd
+ErrorDetails          : 
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Create-SystemVirtualDisk, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 
+                        146
+                        at Deploy-RegularVM, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 790
+                        at Deploy-MPS, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\MPSDeploy.ps1: line 289
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 194
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 17:40:38.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 17:53:37.
+***************************************************************************************************
+2020/09/16 17:53:37 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 17:53:37 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 17:53:40 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 17:53:42 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 17:53:46 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 17:53:46 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 17:53:46 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 17:53:51 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 17:53:51 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 17:53:51 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:53:51 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 17:53:51 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 17:53:53 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 17:53:57 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 17:53:57 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 17:53:57 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 17:54:01 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 17:54:01 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 17:54:01 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 17:54:01 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 17:54:02 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 17:54:02 INFO	MPSDeploy.ps1:(287) Deployment of MPS Virtual Machine 'MPS1' started.
+2020/09/16 17:54:02 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'MPS1' started.
+2020/09/16 17:54:02 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'MPS1' at 'V:\virtual machines' on host '10.201.41.183'.
+2020/09/16 17:54:05 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'MPS1'.
+2020/09/16 17:54:05 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 17:54:08 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\MPS1\MPS1_C.vhdx of VM 'MPS1'...
+2020/09/16 18:00:33 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'MPS1'.
+2020/09/16 18:00:36 INFO	VMDeploy.ps1:(164) Set 'MPS1_C.vhdx' virtual hard disk to be the first boot device for 'MPS1'.
+2020/09/16 18:00:39 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'MPS1'.
+2020/09/16 18:00:47 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 40GB at V:\virtual machines\MPS1\MPS1_D.vhdx using VHDXTool.
+2020/09/16 18:00:49 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_D.vhdx' to VM 'MPS1'.
+2020/09/16 18:00:52 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 40GB at V:\virtual machines\MPS1\MPS1_E.vhdx using VHDXTool.
+2020/09/16 18:00:55 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_E.vhdx' to VM 'MPS1'.
+2020/09/16 18:00:58 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 100GB at V:\virtual machines\MPS1\MPS1_G.vhdx using VHDXTool.
+2020/09/16 18:01:00 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_G.vhdx' to VM 'MPS1'.
+2020/09/16 18:01:04 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 200GB at V:\virtual machines\MPS1\MPS1_W.vhdx using VHDXTool.
+2020/09/16 18:01:06 INFO	VMDeploy.ps1:(218) Attaching 'V:\virtual machines\MPS1\MPS1_W.vhdx' to VM 'MPS1'.
+2020/09/16 18:01:13 INFO	GenericFuncs.ps1:(628) Wait for VM 'MPS1' Integration Tools to be ready.
+2020/09/16 18:01:41 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on MPS1.
+2020/09/16 18:01:41 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 18:02:15 INFO	GenericFuncs.ps1:(684) Network interface in VM 'MPS1' is now ready.
+2020/09/16 18:02:15 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'MPS1'.
+2020/09/16 18:02:24 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'MPS1'
+2020/09/16 18:02:24 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'MPS1' at '10.201.41.178'
+2020/09/16 18:02:27 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.178 has been established.
+2020/09/16 18:02:27 INFO	VMDeploy.ps1:(273) Expanding disk C drive partition of VM 'MPS1'.
+2020/09/16 18:02:55 INFO	VMDeploy.ps1:(247) Make Disk 1 online and writable of VM 'MPS1'.
+2020/09/16 18:02:57 INFO	VMDeploy.ps1:(252) Initialize Disk 1 of VM 'MPS1'.
+2020/09/16 18:02:59 INFO	VMDeploy.ps1:(256) Create new partition on disk 1 of VM 'MPS1'.
+2020/09/16 18:03:02 INFO	VMDeploy.ps1:(260) Formating volume on drive D of VM 'MPS1'.
+2020/09/16 18:03:07 INFO	VMDeploy.ps1:(247) Make Disk 2 online and writable of VM 'MPS1'.
+2020/09/16 18:03:09 INFO	VMDeploy.ps1:(252) Initialize Disk 2 of VM 'MPS1'.
+2020/09/16 18:03:11 INFO	VMDeploy.ps1:(256) Create new partition on disk 2 of VM 'MPS1'.
+2020/09/16 18:03:13 INFO	VMDeploy.ps1:(260) Formating volume on drive E of VM 'MPS1'.
+2020/09/16 18:03:18 INFO	VMDeploy.ps1:(247) Make Disk 3 online and writable of VM 'MPS1'.
+2020/09/16 18:03:20 INFO	VMDeploy.ps1:(252) Initialize Disk 3 of VM 'MPS1'.
+2020/09/16 18:03:22 INFO	VMDeploy.ps1:(256) Create new partition on disk 3 of VM 'MPS1'.
+2020/09/16 18:03:24 INFO	VMDeploy.ps1:(260) Formating volume on drive G of VM 'MPS1'.
+2020/09/16 18:03:29 INFO	VMDeploy.ps1:(247) Make Disk 4 online and writable of VM 'MPS1'.
+2020/09/16 18:03:31 INFO	VMDeploy.ps1:(252) Initialize Disk 4 of VM 'MPS1'.
+2020/09/16 18:03:33 INFO	VMDeploy.ps1:(256) Create new partition on disk 4 of VM 'MPS1'.
+2020/09/16 18:03:35 INFO	VMDeploy.ps1:(260) Formating volume on drive W of VM 'MPS1'.
+2020/09/16 18:03:40 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'Hercules' on VM 'MPS1'
+2020/09/16 18:03:45 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'Hercules' on VM 'MPS1' successfully!
+2020/09/16 18:03:45 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'MPS1'
+2020/09/16 18:03:45 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'MPS1' successfully!
+2020/09/16 18:03:45 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'MPS1' at VM at '10.201.41.178'.
+2020/09/16 18:03:50 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to MPS1 successfully.
+2020/09/16 18:03:50 INFO	GenericFuncs.ps1:(57) Restart machine 'MPS1'.
+2020/09/16 18:04:38 SUCCESS	GenericFuncs.ps1:(68) machine 'MPS1' was restarted successfully.
+2020/09/16 18:04:38 INFO	GenericFuncs.ps1:(266) Adding Hyper-V tools to computer at 10.201.41.178.
+2020/09/16 18:05:08 SUCCESS	GenericFuncs.ps1:(279) Hyper-V tools added successfully.
+2020/09/16 18:05:08 INFO	GenericFuncs.ps1:(290) Adding Hyper-V RSAT tools to computer at '10.201.41.178'.
+2020/09/16 18:05:20 INFO	GenericFuncs.ps1:(303) Hyper-V RSAT tools added successfully to VM at '10.201.41.178'.
+2020/09/16 18:05:20 INFO	GenericFuncs.ps1:(314) Adding Hyper-V RSAT tools to computer at '10.201.41.178'.
+2020/09/16 18:05:36 INFO	GenericFuncs.ps1:(327) Failover Cluster management tools added successfully to VM at '10.201.41.178.'
+2020/09/16 18:05:36 INFO	MPSDeploy.ps1:(82) Copying MPS kit to MPS VM local D: drive...
+2020/09/16 18:12:18 SUCCESS	MPSDeploy.ps1:(121) MPS kit copied successfully.
+2020/09/16 18:12:20 INFO	MPSDeploy.ps1:(128) Executing the MPS kit setup file...
+2020/09/16 18:12:21 SUCCESS	MPSDeploy.ps1:(142) SR Setup started successfully.
+2020/09/16 18:12:29 INFO	GenericFuncs.ps1:(594) Process Rinst has started.
+2020/09/16 18:12:29 INFO	MPSDeploy.ps1:(156) Start installing DC...
+2020/09/16 18:12:29 INFO	MPSDeploy.ps1:(170) DC installation started.
+2020/09/16 18:22:20 INFO	GenericFuncs.ps1:(594) Process CompleteMessage has started.
+2020/09/16 18:22:21 INFO	MPSDeploy.ps1:(186) DC installation completed.
+2020/09/16 18:22:21 INFO	GenericFuncs.ps1:(618) Process CompleteMessage has been stopped.
+2020/09/16 18:22:21 INFO	MPSDeploy.ps1:(204) Start installing MPS Components...
+2020/09/16 18:22:21 INFO	MPSDeploy.ps1:(225) MPS Components installation started.
+2020/09/16 18:32:30 INFO	GenericFuncs.ps1:(594) Process CompleteMessage has started.
+2020/09/16 18:32:30 SUCCESS	MPSDeploy.ps1:(241) MPS Components installation completed.
+2020/09/16 18:32:30 SUCCESS	Deploy.ps1:(198) MPS VM deployed sucessfully.
+2020/09/16 18:32:30 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 18:32:30 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 18:32:30 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 18:32:33 WARNING	VMDeploy.ps1:(37) VM with the same name 'SDC1' already exists.
+2020/09/16 18:32:54 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 18:32:54 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 18:32:57 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 18:33:02 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.RemoteException: Failed to convert the virtual disk.
+                        
+                        The system failed to convert 'v:\stuff\templates\windowsserver2016template.vhdx'.
+TargetObject          : 
+CategoryInfo          : NotSpecified: (:) [Convert-VHD], VirtualizationException
+FullyQualifiedErrorId : OperationFailed,Microsoft.Vhd.PowerShell.Cmdlets.ConvertVhd
+ErrorDetails          : 
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Create-SystemVirtualDisk, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 146
+                        at Deploy-RegularVM, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 790
+                        at Deploy-SDC, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 973
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 217
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 18:33:02.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 18:35:20.
+***************************************************************************************************
+2020/09/16 18:35:20 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 18:35:20 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 18:35:23 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 18:35:26 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 18:35:29 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 18:35:29 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 18:35:29 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 18:35:35 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 18:35:35 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 18:35:35 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 18:35:35 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 18:35:35 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 18:35:37 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 18:35:40 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 18:35:40 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 18:35:40 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 18:35:46 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 18:35:46 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 18:35:46 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 18:35:46 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 18:35:46 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 18:35:46 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 18:35:46 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 18:35:46 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 18:35:49 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 18:35:49 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 18:35:52 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 18:40:41 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'SDC1'.
+2020/09/16 18:40:45 INFO	VMDeploy.ps1:(164) Set 'SDC1_C.vhdx' virtual hard disk to be the first boot device for 'SDC1'.
+2020/09/16 18:40:48 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'SDC1'.
+2020/09/16 18:40:54 INFO	GenericFuncs.ps1:(628) Wait for VM 'SDC1' Integration Tools to be ready.
+2020/09/16 18:41:22 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on SDC1.
+2020/09/16 18:41:22 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 18:42:02 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 18:42:02 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'SDC1'.
+2020/09/16 18:42:11 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'SDC1'
+2020/09/16 18:42:11 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'SDC1' at '10.201.41.179'
+2020/09/16 18:42:14 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.179 has been established.
+2020/09/16 18:42:14 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'SDC1'
+2020/09/16 18:42:37 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'zeus' on VM 'SDC1' successfully!
+2020/09/16 18:42:37 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'SDC1'
+2020/09/16 18:42:37 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'SDC1' successfully!
+2020/09/16 18:42:37 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'SDC1' at VM at '10.201.41.179'.
+2020/09/16 18:42:42 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to SDC1 successfully.
+2020/09/16 18:42:42 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 18:43:33 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 18:43:33 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 18:43:36 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 18:43:36 INFO	VMDeploy.ps1:(699) Add DNS suffix 'sg.freedom.com' to main network card of VM 'SDC1'.
+2020/09/16 18:43:38 INFO	VMDeploy.ps1:(713) Adding 'SDC1' VM to domain 'sg.freedom.com'...
+2020/09/16 18:43:39 INFO	VMDeploy.ps1:(735) 'SDC1' VM was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 18:43:39 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 18:44:26 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 18:44:26 INFO	GenericFuncs.ps1:(266) Adding Hyper-V tools to computer at 10.201.41.179.
+2020/09/16 18:44:57 SUCCESS	GenericFuncs.ps1:(279) Hyper-V tools added successfully.
+2020/09/16 18:44:57 INFO	GenericFuncs.ps1:(290) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 18:45:10 INFO	GenericFuncs.ps1:(303) Hyper-V RSAT tools added successfully to VM at '10.201.41.179'.
+2020/09/16 18:45:10 INFO	GenericFuncs.ps1:(314) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 18:45:24 INFO	GenericFuncs.ps1:(327) Failover Cluster management tools added successfully to VM at '10.201.41.179.'
+2020/09/16 18:45:24 INFO	VMDeploy.ps1:(995) Disable WSMan CredSSP on client.
+2020/09/16 18:45:24 INFO	VMDeploy.ps1:(999) Enable WSMan CredSSP on client.
+2020/09/16 18:45:26 INFO	VMDeploy.ps1:(1002) Installing AD-Domain-Services feature on SDC VM.
+2020/09/16 18:46:05 INFO	VMDeploy.ps1:(1010) Promoting SDC VM as a secondary DC.
+2020/09/16 18:46:05 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote 
+                        server 10.201.41.179 failed with the following error message : The WinRM client cannot process 
+                        the request. A computer policy does not allow the delegation of the user credentials to the 
+                        target computer because the computer is not trusted. The identity of the target computer can 
+                        be verified if you configure the WSMAN service to use a valid certificate using the following 
+                        command: winrm set winrm/config/service '@{CertificateThumbprint="<thumbprint>"}'  Or you can 
+                        check the Event Viewer for an event that specifies that the following SPN could not be 
+                        created: WSMAN/<computerFQDN>. If you find this event, you can manually create the SPN using 
+                        setspn.exe .  If the SPN exists, but CredSSP cannot use Kerberos to validate the identity of 
+                        the target computer and you still want to allow the delegation of the user credentials to the 
+                        target computer, use gpedit.msc and look at the following policy: Computer Configuration -> 
+                        Administrative Templates -> System -> Credentials Delegation -> Allow Fresh Credentials with 
+                        NTLM-only Server Authentication.  Verify that it is enabled and configured with an SPN 
+                        appropriate for the target computer. For example, for a target computer name 
+                        "myserver.domain.com", the SPN can be one of the following: WSMAN/myserver.domain.com or 
+                        WSMAN/*.domain.com. Try the request again after these changes. For more information, see the 
+                        about_Remote_Troubleshooting Help topic.
+TargetObject          : 10.201.41.179
+CategoryInfo          : OpenError: (10.201.41.179:String) [], PSRemotingTransportException
+FullyQualifiedErrorId : -2144108124,PSSessionStateBroken
+ErrorDetails          : [10.201.41.179] Connecting to remote server 10.201.41.179 failed with the following error 
+                        message : The WinRM client cannot process the request. A computer policy does not allow the 
+                        delegation of the user credentials to the target computer because the computer is not trusted. 
+                        The identity of the target computer can be verified if you configure the WSMAN service to use 
+                        a valid certificate using the following command: winrm set winrm/config/service 
+                        '@{CertificateThumbprint="<thumbprint>"}'  Or you can check the Event Viewer for an event that 
+                        specifies that the following SPN could not be created: WSMAN/<computerFQDN>. If you find this 
+                        event, you can manually create the SPN using setspn.exe .  If the SPN exists, but CredSSP 
+                        cannot use Kerberos to validate the identity of the target computer and you still want to 
+                        allow the delegation of the user credentials to the target computer, use gpedit.msc and look 
+                        at the following policy: Computer Configuration -> Administrative Templates -> System -> 
+                        Credentials Delegation -> Allow Fresh Credentials with NTLM-only Server Authentication.  
+                        Verify that it is enabled and configured with an SPN appropriate for the target computer. For 
+                        example, for a target computer name "myserver.domain.com", the SPN can be one of the 
+                        following: WSMAN/myserver.domain.com or WSMAN/*.domain.com. Try the request again after these 
+                        changes. For more information, see the about_Remote_Troubleshooting Help topic.
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Deploy-SDC, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 1012
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 217
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 18:46:05.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 18:48:48.
+***************************************************************************************************
+2020/09/16 18:48:48 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 18:48:48 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 18:48:51 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 18:48:54 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 18:48:57 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 18:48:57 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 18:48:57 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 18:49:02 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 18:49:02 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 18:49:02 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 18:49:02 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 18:49:02 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 18:49:05 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 18:49:08 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 18:49:08 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 18:49:08 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 18:49:13 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 18:49:13 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 18:49:13 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 18:49:13 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 18:49:13 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 18:49:13 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 18:49:13 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 18:49:13 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 18:49:16 WARNING	VMDeploy.ps1:(37) VM with the same name 'SDC1' already exists.
+2020/09/16 18:49:44 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 18:49:45 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 18:49:48 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 18:49:51 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.RemoteException: Failed to convert the virtual disk.
+                        
+                        The system failed to convert 'v:\stuff\templates\windowsserver2016template.vhdx'.
+TargetObject          : 
+CategoryInfo          : NotSpecified: (:) [Convert-VHD], VirtualizationException
+FullyQualifiedErrorId : OperationFailed,Microsoft.Vhd.PowerShell.Cmdlets.ConvertVhd
+ErrorDetails          : 
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Create-SystemVirtualDisk, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 
+                        146
+                        at Deploy-RegularVM, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 790
+                        at Deploy-SDC, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 973
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 217
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 18:49:51.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 18:51:27.
+***************************************************************************************************
+2020/09/16 18:51:27 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 18:51:27 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 18:51:29 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 18:51:31 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 18:51:35 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 18:51:35 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 18:51:35 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 18:51:39 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 18:51:39 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 18:51:40 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 18:51:40 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 18:51:40 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 18:51:42 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 18:51:45 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 18:51:45 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 18:51:45 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 18:51:50 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 18:51:50 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 18:51:50 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 18:51:50 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 18:51:50 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 18:51:50 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 18:51:50 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 18:51:50 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 18:51:54 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 18:51:54 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 18:51:57 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 18:56:48 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'SDC1'.
+2020/09/16 18:56:51 INFO	VMDeploy.ps1:(164) Set 'SDC1_C.vhdx' virtual hard disk to be the first boot device for 'SDC1'.
+2020/09/16 18:56:54 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'SDC1'.
+2020/09/16 18:57:00 INFO	GenericFuncs.ps1:(628) Wait for VM 'SDC1' Integration Tools to be ready.
+2020/09/16 18:57:28 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on SDC1.
+2020/09/16 18:57:28 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 18:58:09 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 18:58:09 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'SDC1'.
+2020/09/16 18:58:17 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'SDC1'
+2020/09/16 18:58:17 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'SDC1' at '10.201.41.179'
+2020/09/16 18:58:20 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.179 has been established.
+2020/09/16 18:58:20 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'SDC1'
+2020/09/16 18:58:44 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'zeus' on VM 'SDC1' successfully!
+2020/09/16 19:00:29 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'SDC1'
+2020/09/16 19:00:29 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'SDC1' successfully!
+2020/09/16 19:00:29 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'SDC1' at VM at '10.201.41.179'.
+2020/09/16 19:00:34 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to SDC1 successfully.
+2020/09/16 19:00:34 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 19:01:21 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 19:01:21 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 19:01:25 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 19:01:25 INFO	VMDeploy.ps1:(699) Add DNS suffix 'sg.freedom.com' to main network card of VM 'SDC1'.
+2020/09/16 19:01:26 INFO	VMDeploy.ps1:(713) Adding 'SDC1' VM to domain 'sg.freedom.com'...
+2020/09/16 19:01:34 INFO	VMDeploy.ps1:(735) 'SDC1' VM was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 19:01:34 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 19:02:22 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 19:02:22 INFO	GenericFuncs.ps1:(266) Adding Hyper-V tools to computer at 10.201.41.179.
+2020/09/16 19:02:52 SUCCESS	GenericFuncs.ps1:(279) Hyper-V tools added successfully.
+2020/09/16 19:02:52 INFO	GenericFuncs.ps1:(290) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 19:03:04 INFO	GenericFuncs.ps1:(303) Hyper-V RSAT tools added successfully to VM at '10.201.41.179'.
+2020/09/16 19:03:04 INFO	GenericFuncs.ps1:(314) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 19:03:20 INFO	GenericFuncs.ps1:(327) Failover Cluster management tools added successfully to VM at '10.201.41.179.'
+2020/09/16 19:03:20 INFO	VMDeploy.ps1:(995) Disable WSMan CredSSP on client.
+2020/09/16 19:03:21 INFO	VMDeploy.ps1:(999) Enable WSMan CredSSP on client.
+2020/09/16 19:03:22 INFO	VMDeploy.ps1:(1002) Installing AD-Domain-Services feature on SDC VM.
+2020/09/16 19:04:02 INFO	VMDeploy.ps1:(1010) Promoting SDC VM as a secondary DC.
+2020/09/16 19:04:02 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote 
+                        server 10.201.41.179 failed with the following error message : The WinRM client cannot process 
+                        the request. A computer policy does not allow the delegation of the user credentials to the 
+                        target computer because the computer is not trusted. The identity of the target computer can 
+                        be verified if you configure the WSMAN service to use a valid certificate using the following 
+                        command: winrm set winrm/config/service '@{CertificateThumbprint="<thumbprint>"}'  Or you can 
+                        check the Event Viewer for an event that specifies that the following SPN could not be 
+                        created: WSMAN/<computerFQDN>. If you find this event, you can manually create the SPN using 
+                        setspn.exe .  If the SPN exists, but CredSSP cannot use Kerberos to validate the identity of 
+                        the target computer and you still want to allow the delegation of the user credentials to the 
+                        target computer, use gpedit.msc and look at the following policy: Computer Configuration -> 
+                        Administrative Templates -> System -> Credentials Delegation -> Allow Fresh Credentials with 
+                        NTLM-only Server Authentication.  Verify that it is enabled and configured with an SPN 
+                        appropriate for the target computer. For example, for a target computer name 
+                        "myserver.domain.com", the SPN can be one of the following: WSMAN/myserver.domain.com or 
+                        WSMAN/*.domain.com. Try the request again after these changes. For more information, see the 
+                        about_Remote_Troubleshooting Help topic.
+TargetObject          : 10.201.41.179
+CategoryInfo          : OpenError: (10.201.41.179:String) [], PSRemotingTransportException
+FullyQualifiedErrorId : -2144108124,PSSessionStateBroken
+ErrorDetails          : [10.201.41.179] Connecting to remote server 10.201.41.179 failed with the following error 
+                        message : The WinRM client cannot process the request. A computer policy does not allow the 
+                        delegation of the user credentials to the target computer because the computer is not trusted. 
+                        The identity of the target computer can be verified if you configure the WSMAN service to use 
+                        a valid certificate using the following command: winrm set winrm/config/service 
+                        '@{CertificateThumbprint="<thumbprint>"}'  Or you can check the Event Viewer for an event that 
+                        specifies that the following SPN could not be created: WSMAN/<computerFQDN>. If you find this 
+                        event, you can manually create the SPN using setspn.exe .  If the SPN exists, but CredSSP 
+                        cannot use Kerberos to validate the identity of the target computer and you still want to 
+                        allow the delegation of the user credentials to the target computer, use gpedit.msc and look 
+                        at the following policy: Computer Configuration -> Administrative Templates -> System -> 
+                        Credentials Delegation -> Allow Fresh Credentials with NTLM-only Server Authentication.  
+                        Verify that it is enabled and configured with an SPN appropriate for the target computer. For 
+                        example, for a target computer name "myserver.domain.com", the SPN can be one of the 
+                        following: WSMAN/myserver.domain.com or WSMAN/*.domain.com. Try the request again after these 
+                        changes. For more information, see the about_Remote_Troubleshooting Help topic.
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Deploy-SDC, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 1012
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 217
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 19:04:02.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 19:11:12.
+***************************************************************************************************
+2020/09/16 19:11:12 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 19:11:12 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 19:11:15 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 19:11:18 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 19:11:21 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 19:11:21 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 19:11:21 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 19:11:27 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 19:11:27 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 19:11:27 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 19:11:27 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 19:11:27 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 19:11:29 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 19:11:32 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 19:11:32 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 19:11:32 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 19:11:38 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 19:11:38 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 19:11:38 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 19:11:38 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 19:11:38 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 19:11:38 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 19:11:38 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 19:11:38 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 19:11:41 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 19:11:41 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 19:11:44 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 19:16:38 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'SDC1'.
+2020/09/16 19:16:41 INFO	VMDeploy.ps1:(164) Set 'SDC1_C.vhdx' virtual hard disk to be the first boot device for 'SDC1'.
+2020/09/16 19:16:44 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'SDC1'.
+2020/09/16 19:16:50 INFO	GenericFuncs.ps1:(628) Wait for VM 'SDC1' Integration Tools to be ready.
+2020/09/16 19:17:18 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on SDC1.
+2020/09/16 19:17:19 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 19:17:40 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 19:17:40 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'SDC1'.
+2020/09/16 19:17:47 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'SDC1'
+2020/09/16 19:17:47 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'SDC1' at '10.201.41.179'
+2020/09/16 19:17:53 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.179 has been established.
+2020/09/16 19:17:53 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'SDC1'
+2020/09/16 19:17:53 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote 
+                        server 10.201.41.179 failed with the following error message : Access is denied. For more 
+                        information, see the about_Remote_Troubleshooting Help topic.
+TargetObject          : 10.201.41.179
+CategoryInfo          : OpenError: (10.201.41.179:String) [], PSRemotingTransportException
+FullyQualifiedErrorId : AccessDenied,PSSessionStateBroken
+ErrorDetails          : [10.201.41.179] Connecting to remote server 10.201.41.179 failed with the following error 
+                        message : Access is denied. For more information, see the about_Remote_Troubleshooting Help 
+                        topic.
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Rename-AdminUser, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\GenericFuncs.ps1: line 82
+                        at Deploy-RegularVM, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 823
+                        at Deploy-SDC, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 973
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 217
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 19:17:53.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 20:46:00.
+***************************************************************************************************
+2020/09/16 20:46:00 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 20:46:00 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 20:46:09 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 20:46:11 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 20:46:15 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 20:46:15 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 20:46:15 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 20:46:20 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 20:46:20 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 20:46:20 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 20:46:20 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 20:46:20 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 20:46:23 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 20:46:26 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 20:46:26 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 20:46:26 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 20:46:31 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 20:46:31 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 20:46:31 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 20:46:31 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 20:46:31 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 20:46:31 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 20:46:31 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 20:46:31 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 20:46:35 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 20:46:35 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 20:46:38 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 20:51:32 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'SDC1'.
+2020/09/16 20:51:35 INFO	VMDeploy.ps1:(164) Set 'SDC1_C.vhdx' virtual hard disk to be the first boot device for 'SDC1'.
+2020/09/16 20:51:38 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'SDC1'.
+2020/09/16 20:51:44 INFO	GenericFuncs.ps1:(628) Wait for VM 'SDC1' Integration Tools to be ready.
+2020/09/16 20:52:12 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on SDC1.
+2020/09/16 20:52:12 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 20:52:53 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 20:52:53 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'SDC1'.
+2020/09/16 20:53:02 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'SDC1'
+2020/09/16 20:53:02 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'SDC1' at '10.201.41.179'
+2020/09/16 20:53:05 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.179 has been established.
+2020/09/16 20:53:05 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'SDC1'
+2020/09/16 20:53:28 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'zeus' on VM 'SDC1' successfully!
+2020/09/16 20:53:28 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'SDC1'
+2020/09/16 20:53:28 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'SDC1' successfully!
+2020/09/16 20:53:28 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'SDC1' at VM at '10.201.41.179'.
+2020/09/16 20:53:33 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to SDC1 successfully.
+2020/09/16 20:53:33 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 20:54:26 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 20:54:27 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 20:54:32 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 20:54:32 INFO	VMDeploy.ps1:(699) Add DNS suffix 'sg.freedom.com' to main network card of VM 'SDC1'.
+2020/09/16 20:54:33 INFO	VMDeploy.ps1:(713) Adding 'SDC1' VM to domain 'sg.freedom.com'...
+2020/09/16 20:54:40 INFO	VMDeploy.ps1:(735) 'SDC1' VM was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 20:54:41 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 20:55:28 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 20:55:28 INFO	GenericFuncs.ps1:(266) Adding Hyper-V tools to computer at 10.201.41.179.
+2020/09/16 20:55:58 SUCCESS	GenericFuncs.ps1:(279) Hyper-V tools added successfully.
+2020/09/16 20:55:58 INFO	GenericFuncs.ps1:(290) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 20:56:10 INFO	GenericFuncs.ps1:(303) Hyper-V RSAT tools added successfully to VM at '10.201.41.179'.
+2020/09/16 20:56:10 INFO	GenericFuncs.ps1:(314) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 20:56:26 INFO	GenericFuncs.ps1:(327) Failover Cluster management tools added successfully to VM at '10.201.41.179.'
+2020/09/16 20:56:26 INFO	VMDeploy.ps1:(995) Disable WSMan CredSSP on client.
+2020/09/16 20:56:27 INFO	VMDeploy.ps1:(999) Enable WSMan CredSSP on client.
+2020/09/16 20:56:28 INFO	VMDeploy.ps1:(1002) Installing AD-Domain-Services feature on SDC VM.
+2020/09/16 20:57:07 INFO	VMDeploy.ps1:(1010) Promoting SDC VM as a secondary DC.
+2020/09/16 20:57:08 ERROR	Deploy.ps1:(303) 
+
+Exception             : System.Management.Automation.Remoting.PSRemotingTransportException: Connecting to remote 
+                        server 10.201.41.179 failed with the following error message : The WinRM client cannot process 
+                        the request. A computer policy does not allow the delegation of the user credentials to the 
+                        target computer because the computer is not trusted. The identity of the target computer can 
+                        be verified if you configure the WSMAN service to use a valid certificate using the following 
+                        command: winrm set winrm/config/service '@{CertificateThumbprint="<thumbprint>"}'  Or you can 
+                        check the Event Viewer for an event that specifies that the following SPN could not be 
+                        created: WSMAN/<computerFQDN>. If you find this event, you can manually create the SPN using 
+                        setspn.exe .  If the SPN exists, but CredSSP cannot use Kerberos to validate the identity of 
+                        the target computer and you still want to allow the delegation of the user credentials to the 
+                        target computer, use gpedit.msc and look at the following policy: Computer Configuration -> 
+                        Administrative Templates -> System -> Credentials Delegation -> Allow Fresh Credentials with 
+                        NTLM-only Server Authentication.  Verify that it is enabled and configured with an SPN 
+                        appropriate for the target computer. For example, for a target computer name 
+                        "myserver.domain.com", the SPN can be one of the following: WSMAN/myserver.domain.com or 
+                        WSMAN/*.domain.com. Try the request again after these changes. For more information, see the 
+                        about_Remote_Troubleshooting Help topic.
+TargetObject          : 10.201.41.179
+CategoryInfo          : OpenError: (10.201.41.179:String) [], PSRemotingTransportException
+FullyQualifiedErrorId : -2144108124,PSSessionStateBroken
+ErrorDetails          : [10.201.41.179] Connecting to remote server 10.201.41.179 failed with the following error 
+                        message : The WinRM client cannot process the request. A computer policy does not allow the 
+                        delegation of the user credentials to the target computer because the computer is not trusted. 
+                        The identity of the target computer can be verified if you configure the WSMAN service to use 
+                        a valid certificate using the following command: winrm set winrm/config/service 
+                        '@{CertificateThumbprint="<thumbprint>"}'  Or you can check the Event Viewer for an event that 
+                        specifies that the following SPN could not be created: WSMAN/<computerFQDN>. If you find this 
+                        event, you can manually create the SPN using setspn.exe .  If the SPN exists, but CredSSP 
+                        cannot use Kerberos to validate the identity of the target computer and you still want to 
+                        allow the delegation of the user credentials to the target computer, use gpedit.msc and look 
+                        at the following policy: Computer Configuration -> Administrative Templates -> System -> 
+                        Credentials Delegation -> Allow Fresh Credentials with NTLM-only Server Authentication.  
+                        Verify that it is enabled and configured with an SPN appropriate for the target computer. For 
+                        example, for a target computer name "myserver.domain.com", the SPN can be one of the 
+                        following: WSMAN/myserver.domain.com or WSMAN/*.domain.com. Try the request again after these 
+                        changes. For more information, see the about_Remote_Troubleshooting Help topic.
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at Deploy-SDC, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\VMDeploy.ps1: line 1012
+                        at <ScriptBlock>, D:\Stargate Files\HVIM\HVIM_v1.8.1\Deployment\Deploy.ps1: line 217
+PipelineIterationInfo : {}
+PSMessageDetails      : 
+
+
+
+
+***************************************************************************************************
+Log ended at: 2020/09/16 20:57:08.
+***************************************************************************************************
+
+***************************************************************************************************
+Hyper-V deployment tool version: 1.8.1
+Deployment log file location is: D:\Stargate Files\HVIM\HVIM_v1.8.1\Log\Freedom_HVIM \Deployment.log
+Log started at: 2020/09/16 21:08:28.
+***************************************************************************************************
+2020/09/16 21:08:28 INFO	Deploy.ps1:(100) Deployment mode is: All
+2020/09/16 21:08:28 INFO	Deploy.ps1:(101) Run from: D:\Stargate Files\HVIM\HVIM_v1.8.1
+2020/09/16 21:08:47 INFO	Hosts.ps1:(680) Configuring Hyper-V hosts...
+2020/09/16 21:08:50 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS01'.
+2020/09/16 21:08:53 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS01' network is already configured.
+2020/09/16 21:08:53 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 21:08:53 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS01'.
+2020/09/16 21:08:59 WARNING	Hosts.ps1:(526) V already exists on host 'HVS01'. skipping it.
+2020/09/16 21:08:59 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS01'.
+2020/09/16 21:08:59 INFO	Hosts.ps1:(631) Template path HVS01:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 21:08:59 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS01:\Stuff\Templates, if needed.
+2020/09/16 21:08:59 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS01'.
+2020/09/16 21:09:01 INFO	GenericFuncs.ps1:(417) 'HYPERV' already added to Add/Remove section on host 'HVS02'.
+2020/09/16 21:09:04 INFO	Hosts.ps1:(240) Hyper-V Host 'HVS02' network is already configured.
+2020/09/16 21:09:04 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.184 has been established.
+2020/09/16 21:09:04 INFO	Hosts.ps1:(508) Creating disk partitions on host 'HVS02'.
+2020/09/16 21:09:09 WARNING	Hosts.ps1:(526) V already exists on host 'HVS02'. skipping it.
+2020/09/16 21:09:10 INFO	Hosts.ps1:(606) Copying template (VHDX) files to the host 'HVS02'.
+2020/09/16 21:09:10 INFO	Hosts.ps1:(631) Template path HVS02:\Stuff\Templates doesn't exist on server file system. Will try to create it.
+2020/09/16 21:09:10 INFO	Hosts.ps1:(654) Copying template D:\Stargate Files\Templates\WindowsServer2016Template.vhdx to HVS02:\Stuff\Templates, if needed.
+2020/09/16 21:09:10 SUCCESS	Hosts.ps1:(661) Template 'D:\Stargate Files\Templates\WindowsServer2016Template.vhdx' verified on the host 'HVS02'.
+2020/09/16 21:09:10 INFO	VMDeploy.ps1:(972) Deployment of SDC Virtual Machine 'SDC1' started.
+2020/09/16 21:09:10 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'SDC1' started.
+2020/09/16 21:09:10 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'SDC1' at 'V:\virtual machines' on host '10.201.41.184'.
+2020/09/16 21:09:13 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'SDC1'.
+2020/09/16 21:09:13 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 21:09:16 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to V:\virtual machines\SDC1\SDC1_C.vhdx of VM 'SDC1'...
+2020/09/16 21:14:07 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'SDC1'.
+2020/09/16 21:14:10 INFO	VMDeploy.ps1:(164) Set 'SDC1_C.vhdx' virtual hard disk to be the first boot device for 'SDC1'.
+2020/09/16 21:14:13 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'SDC1'.
+2020/09/16 21:14:20 INFO	GenericFuncs.ps1:(628) Wait for VM 'SDC1' Integration Tools to be ready.
+2020/09/16 21:14:48 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on SDC1.
+2020/09/16 21:14:48 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 21:15:27 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 21:15:27 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'SDC1'.
+2020/09/16 21:15:36 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'SDC1'
+2020/09/16 21:15:36 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'SDC1' at '10.201.41.179'
+2020/09/16 21:15:39 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.179 has been established.
+2020/09/16 21:15:39 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'SDC1'
+2020/09/16 21:16:01 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'zeus' on VM 'SDC1' successfully!
+2020/09/16 21:16:01 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'SDC1'
+2020/09/16 21:16:02 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'SDC1' successfully!
+2020/09/16 21:16:02 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'SDC1' at VM at '10.201.41.179'.
+2020/09/16 21:16:07 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to SDC1 successfully.
+2020/09/16 21:16:07 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 21:16:54 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 21:16:54 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 21:16:57 INFO	GenericFuncs.ps1:(684) Network interface in VM 'SDC1' is now ready.
+2020/09/16 21:16:57 INFO	VMDeploy.ps1:(699) Add DNS suffix 'sg.freedom.com' to main network card of VM 'SDC1'.
+2020/09/16 21:16:59 INFO	VMDeploy.ps1:(713) Adding 'SDC1' VM to domain 'sg.freedom.com'...
+2020/09/16 21:17:13 INFO	VMDeploy.ps1:(735) 'SDC1' VM was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 21:17:13 INFO	GenericFuncs.ps1:(57) Restart machine 'SDC1'.
+2020/09/16 21:18:01 SUCCESS	GenericFuncs.ps1:(68) machine 'SDC1' was restarted successfully.
+2020/09/16 21:18:01 INFO	GenericFuncs.ps1:(266) Adding Hyper-V tools to computer at 10.201.41.179.
+2020/09/16 21:18:30 SUCCESS	GenericFuncs.ps1:(279) Hyper-V tools added successfully.
+2020/09/16 21:18:30 INFO	GenericFuncs.ps1:(290) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 21:18:43 INFO	GenericFuncs.ps1:(303) Hyper-V RSAT tools added successfully to VM at '10.201.41.179'.
+2020/09/16 21:18:43 INFO	GenericFuncs.ps1:(314) Adding Hyper-V RSAT tools to computer at '10.201.41.179'.
+2020/09/16 21:18:57 INFO	GenericFuncs.ps1:(327) Failover Cluster management tools added successfully to VM at '10.201.41.179.'
+2020/09/16 21:18:57 INFO	VMDeploy.ps1:(995) Disable WSMan CredSSP on client.
+2020/09/16 21:18:58 INFO	VMDeploy.ps1:(999) Enable WSMan CredSSP on client.
+2020/09/16 21:18:59 INFO	VMDeploy.ps1:(1002) Installing AD-Domain-Services feature on SDC VM.
+2020/09/16 21:19:40 INFO	VMDeploy.ps1:(1010) Promoting SDC VM as a secondary DC.
+2020/09/16 21:20:40 SUCCESS	Deploy.ps1:(221) Deployment of SDC VM Finished successfully!
+2020/09/16 21:20:45 INFO	Hosts.ps1:(198) Adding Hyper-V Host with IP 10.201.41.183 to domain 'sg.freedom.com'...
+2020/09/16 21:20:55 SUCCESS	Hosts.ps1:(209) Hyper-V Host with IP 10.201.41.183 was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 21:21:00 INFO	Hosts.ps1:(198) Adding Hyper-V Host with IP 10.201.41.184 to domain 'sg.freedom.com'...
+2020/09/16 21:21:11 SUCCESS	Hosts.ps1:(209) Hyper-V Host with IP 10.201.41.184 was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 21:21:11 INFO	Hosts.ps1:(805) Restarting Hyper-V hosts...
+2020/09/16 21:21:11 INFO	GenericFuncs.ps1:(57) Restart machine 'HVS01'.
+2020/09/16 21:26:43 SUCCESS	GenericFuncs.ps1:(68) machine 'HVS01' was restarted successfully.
+2020/09/16 21:26:43 INFO	GenericFuncs.ps1:(57) Restart machine 'HVS02'.
+2020/09/16 21:31:48 SUCCESS	GenericFuncs.ps1:(68) machine 'HVS02' was restarted successfully.
+2020/09/16 21:31:48 INFO	Hosts.ps1:(21) Enable WSMan CredSSP on server at 10.201.41.183.
+2020/09/16 21:31:55 INFO	Hosts.ps1:(21) Enable WSMan CredSSP on server at 10.201.41.184.
+2020/09/16 21:32:00 INFO	Hosts.ps1:(28) Disable WSMan CredSSP on client.
+2020/09/16 21:32:02 INFO	Hosts.ps1:(32) Enable WSMan CredSSP on client.
+2020/09/16 21:32:03 INFO	Hosts.ps1:(63) Add failover clustering feature to server at 10.201.41.183.
+2020/09/16 21:32:28 INFO	Hosts.ps1:(63) Add failover clustering feature to server at 10.201.41.184.
+2020/09/16 21:32:54 INFO	Hosts.ps1:(76) Checking if cluster already exists.
+2020/09/16 21:32:59 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.183 has been established.
+2020/09/16 21:32:59 INFO	Hosts.ps1:(99) Creating cluster 'HyperVCluster' on IP 10.201.41.185
+2020/09/16 21:33:27 SUCCESS	Hosts.ps1:(131) Cluster HyperVCluster created sucessfully.
+2020/09/16 21:33:27 INFO	Hosts.ps1:(880) Configuring Load Balancing policy for Hyper-V host 'HVS01'.
+2020/09/16 21:33:30 INFO	Hosts.ps1:(880) Configuring Load Balancing policy for Hyper-V host 'HVS02'.
+2020/09/16 21:33:41 INFO	Hosts.ps1:(908) Creating Storage Pool.
+2020/09/16 21:33:59 INFO	Hosts.ps1:(949) Creating Quorum disk.
+2020/09/16 21:34:18 INFO	Hosts.ps1:(1033) Creating Cluster Shared Volume.
+2020/09/16 21:34:51 INFO	Hosts.ps1:(1101) Configuring Cluster network names and Migration Network Order.
+2020/09/16 21:34:58 INFO	Hosts.ps1:(1150) Adding additional nodes to the Cluster.
+2020/09/16 21:35:16 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'GSA1' started.
+2020/09/16 21:35:16 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'GSA1' at 'C:\ClusterStorage\Volume1' on host '10.201.41.183'.
+2020/09/16 21:35:22 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'GSA1'.
+2020/09/16 21:35:22 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 21:35:25 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to C:\ClusterStorage\Volume1\GSA1\GSA1_C.vhdx of VM 'GSA1'...
+2020/09/16 21:47:49 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'GSA1'.
+2020/09/16 21:47:53 INFO	VMDeploy.ps1:(164) Set 'GSA1_C.vhdx' virtual hard disk to be the first boot device for 'GSA1'.
+2020/09/16 21:47:56 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'GSA1'.
+2020/09/16 21:48:01 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 20GB at C:\ClusterStorage\Volume1\GSA1\GSA1_D.vhdx using VHDXTool.
+2020/09/16 21:48:03 INFO	VMDeploy.ps1:(218) Attaching 'C:\ClusterStorage\Volume1\GSA1\GSA1_D.vhdx' to VM 'GSA1'.
+2020/09/16 21:48:07 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 10GB at C:\ClusterStorage\Volume1\GSA1\GSA1_E.vhdx using VHDXTool.
+2020/09/16 21:48:09 INFO	VMDeploy.ps1:(218) Attaching 'C:\ClusterStorage\Volume1\GSA1\GSA1_E.vhdx' to VM 'GSA1'.
+2020/09/16 21:48:13 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 170GB at C:\ClusterStorage\Volume1\GSA1\GSA1_F.vhdx using VHDXTool.
+2020/09/16 21:48:15 INFO	VMDeploy.ps1:(218) Attaching 'C:\ClusterStorage\Volume1\GSA1\GSA1_F.vhdx' to VM 'GSA1'.
+2020/09/16 21:48:22 INFO	GenericFuncs.ps1:(628) Wait for VM 'GSA1' Integration Tools to be ready.
+2020/09/16 21:48:52 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on GSA1.
+2020/09/16 21:48:52 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 21:49:51 INFO	GenericFuncs.ps1:(684) Network interface in VM 'GSA1' is now ready.
+2020/09/16 21:49:51 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'GSA1'.
+2020/09/16 21:50:00 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'GSA1'
+2020/09/16 21:50:00 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'GSA1' at '10.201.41.180'
+2020/09/16 21:50:03 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.180 has been established.
+2020/09/16 21:50:03 INFO	VMDeploy.ps1:(247) Make Disk 1 online and writable of VM 'GSA1'.
+2020/09/16 21:50:25 INFO	VMDeploy.ps1:(252) Initialize Disk 1 of VM 'GSA1'.
+2020/09/16 21:50:27 INFO	VMDeploy.ps1:(256) Create new partition on disk 1 of VM 'GSA1'.
+2020/09/16 21:50:30 INFO	VMDeploy.ps1:(260) Formating volume on drive D of VM 'GSA1'.
+2020/09/16 21:50:40 INFO	VMDeploy.ps1:(247) Make Disk 2 online and writable of VM 'GSA1'.
+2020/09/16 21:50:43 INFO	VMDeploy.ps1:(252) Initialize Disk 2 of VM 'GSA1'.
+2020/09/16 21:50:45 INFO	VMDeploy.ps1:(256) Create new partition on disk 2 of VM 'GSA1'.
+2020/09/16 21:50:47 INFO	VMDeploy.ps1:(260) Formating volume on drive E of VM 'GSA1'.
+2020/09/16 21:50:55 INFO	VMDeploy.ps1:(247) Make Disk 3 online and writable of VM 'GSA1'.
+2020/09/16 21:50:57 INFO	VMDeploy.ps1:(252) Initialize Disk 3 of VM 'GSA1'.
+2020/09/16 21:50:59 INFO	VMDeploy.ps1:(256) Create new partition on disk 3 of VM 'GSA1'.
+2020/09/16 21:51:01 INFO	VMDeploy.ps1:(260) Formating volume on drive F of VM 'GSA1'.
+2020/09/16 21:51:17 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'GSA1'
+2020/09/16 21:51:22 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'zeus' on VM 'GSA1' successfully!
+2020/09/16 21:51:22 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'GSA1'
+2020/09/16 21:51:22 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'GSA1' successfully!
+2020/09/16 21:51:22 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'GSA1' at VM at '10.201.41.180'.
+2020/09/16 21:51:27 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to GSA1 successfully.
+2020/09/16 21:51:27 INFO	GenericFuncs.ps1:(57) Restart machine 'GSA1'.
+2020/09/16 21:52:15 SUCCESS	GenericFuncs.ps1:(68) machine 'GSA1' was restarted successfully.
+2020/09/16 21:52:15 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 21:52:19 INFO	GenericFuncs.ps1:(684) Network interface in VM 'GSA1' is now ready.
+2020/09/16 21:52:19 INFO	VMDeploy.ps1:(699) Add DNS suffix 'sg.freedom.com' to main network card of VM 'GSA1'.
+2020/09/16 21:52:21 INFO	VMDeploy.ps1:(713) Adding 'GSA1' VM to domain 'sg.freedom.com'...
+2020/09/16 21:52:24 INFO	VMDeploy.ps1:(735) 'GSA1' VM was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 21:52:24 INFO	GenericFuncs.ps1:(57) Restart machine 'GSA1'.
+2020/09/16 21:53:14 SUCCESS	GenericFuncs.ps1:(68) machine 'GSA1' was restarted successfully.
+2020/09/16 21:53:14 INFO	VMDeploy.ps1:(846) Adding VM GSA1 to the cluster.
+2020/09/16 21:53:14 INFO	VMDeploy.ps1:(746) Adding VM 'GSA1' to the cluster.
+2020/09/16 21:53:22 SUCCESS	VMDeploy.ps1:(764) VM 'GSA1' was added to the cluster successfully!
+2020/09/16 21:53:22 SUCCESS	VMDeploy.ps1:(875) Finished deployment of 'GSA1' VM sucessfully.
+2020/09/16 21:53:22 INFO	VMDeploy.ps1:(780) Deployment of Virtual Machine 'UMD1' started.
+2020/09/16 21:53:22 INFO	VMDeploy.ps1:(27) Creating Virtual Machine 'UMD1' at 'C:\ClusterStorage\Volume1' on host '10.201.41.183'.
+2020/09/16 21:53:27 INFO	VMDeploy.ps1:(77) Configuring settings of Virtual Machine 'UMD1'.
+2020/09/16 21:53:27 INFO	VMDeploy.ps1:(464) Configure integration services.
+2020/09/16 21:53:31 INFO	VMDeploy.ps1:(145) Converting & copying VHDX V:\Stuff\Templates\WindowsServer2016Template.vhdx to C:\ClusterStorage\Volume1\UMD1\UMD1_C.vhdx of VM 'UMD1'...
+2020/09/16 22:07:31 INFO	VMDeploy.ps1:(157) Attaching virtual hard disk to VM 'UMD1'.
+2020/09/16 22:07:35 INFO	VMDeploy.ps1:(164) Set 'UMD1_C.vhdx' virtual hard disk to be the first boot device for 'UMD1'.
+2020/09/16 22:07:38 INFO	VMDeploy.ps1:(341) Configure primary network adapter of VM 'UMD1'.
+2020/09/16 22:07:43 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 20GB at C:\ClusterStorage\Volume1\UMD1\UMD1_D.vhdx using VHDXTool.
+2020/09/16 22:07:46 INFO	VMDeploy.ps1:(218) Attaching 'C:\ClusterStorage\Volume1\UMD1\UMD1_D.vhdx' to VM 'UMD1'.
+2020/09/16 22:07:49 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 10GB at C:\ClusterStorage\Volume1\UMD1\UMD1_E.vhdx using VHDXTool.
+2020/09/16 22:07:52 INFO	VMDeploy.ps1:(218) Attaching 'C:\ClusterStorage\Volume1\UMD1\UMD1_E.vhdx' to VM 'UMD1'.
+2020/09/16 22:07:55 INFO	VMDeploy.ps1:(213) Creating aditional VHD with size 100GB at C:\ClusterStorage\Volume1\UMD1\UMD1_F.vhdx using VHDXTool.
+2020/09/16 22:07:58 INFO	VMDeploy.ps1:(218) Attaching 'C:\ClusterStorage\Volume1\UMD1\UMD1_F.vhdx' to VM 'UMD1'.
+2020/09/16 22:08:05 INFO	GenericFuncs.ps1:(628) Wait for VM 'UMD1' Integration Tools to be ready.
+2020/09/16 22:08:34 INFO	GenericFuncs.ps1:(649) Integration Tools are now ready on UMD1.
+2020/09/16 22:08:34 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 22:09:40 INFO	GenericFuncs.ps1:(684) Network interface in VM 'UMD1' is now ready.
+2020/09/16 22:09:40 INFO	VMDeploy.ps1:(631) Configure network settings for main NIC of VM 'UMD1'.
+2020/09/16 22:09:48 INFO	VMDeploy.ps1:(660) Changed main NIC network settings of VM 'UMD1'
+2020/09/16 22:09:48 INFO	VMDeploy.ps1:(668) Checking network connection to VM 'UMD1' at '10.201.41.181'
+2020/09/16 22:09:51 INFO	GenericFuncs.ps1:(236) Network connection to 10.201.41.181 has been established.
+2020/09/16 22:09:51 INFO	VMDeploy.ps1:(247) Make Disk 1 online and writable of VM 'UMD1'.
+2020/09/16 22:10:19 INFO	VMDeploy.ps1:(252) Initialize Disk 1 of VM 'UMD1'.
+2020/09/16 22:10:21 INFO	VMDeploy.ps1:(256) Create new partition on disk 1 of VM 'UMD1'.
+2020/09/16 22:10:24 INFO	VMDeploy.ps1:(260) Formating volume on drive D of VM 'UMD1'.
+2020/09/16 22:10:34 INFO	VMDeploy.ps1:(247) Make Disk 2 online and writable of VM 'UMD1'.
+2020/09/16 22:10:37 INFO	VMDeploy.ps1:(252) Initialize Disk 2 of VM 'UMD1'.
+2020/09/16 22:10:39 INFO	VMDeploy.ps1:(256) Create new partition on disk 2 of VM 'UMD1'.
+2020/09/16 22:10:41 INFO	VMDeploy.ps1:(260) Formating volume on drive E of VM 'UMD1'.
+2020/09/16 22:10:49 INFO	VMDeploy.ps1:(247) Make Disk 3 online and writable of VM 'UMD1'.
+2020/09/16 22:10:51 INFO	VMDeploy.ps1:(252) Initialize Disk 3 of VM 'UMD1'.
+2020/09/16 22:10:53 INFO	VMDeploy.ps1:(256) Create new partition on disk 3 of VM 'UMD1'.
+2020/09/16 22:10:56 INFO	VMDeploy.ps1:(260) Formating volume on drive F of VM 'UMD1'.
+2020/09/16 22:11:10 INFO	GenericFuncs.ps1:(80) Renaming admin user to 'zeus' on VM 'UMD1'
+2020/09/16 22:11:16 SUCCESS	GenericFuncs.ps1:(94) Admin user renamed to 'zeus' on VM 'UMD1' successfully!
+2020/09/16 22:11:16 INFO	GenericFuncs.ps1:(107) Changing admin user's password on VM 'UMD1'
+2020/09/16 22:11:16 SUCCESS	GenericFuncs.ps1:(123) Admin user's password was changed on VM 'UMD1' successfully!
+2020/09/16 22:11:16 INFO	GenericFuncs.ps1:(137) Renaming VM's hostname to 'UMD1' at VM at '10.201.41.181'.
+2020/09/16 22:11:21 SUCCESS	GenericFuncs.ps1:(149) Changed hostname to UMD1 successfully.
+2020/09/16 22:11:21 INFO	GenericFuncs.ps1:(57) Restart machine 'UMD1'.
+2020/09/16 22:12:09 SUCCESS	GenericFuncs.ps1:(68) machine 'UMD1' was restarted successfully.
+2020/09/16 22:12:09 INFO	GenericFuncs.ps1:(668) Waiting for network interface to be available.
+2020/09/16 22:12:13 INFO	GenericFuncs.ps1:(684) Network interface in VM 'UMD1' is now ready.
+2020/09/16 22:12:13 INFO	VMDeploy.ps1:(699) Add DNS suffix 'sg.freedom.com' to main network card of VM 'UMD1'.
+2020/09/16 22:12:15 INFO	VMDeploy.ps1:(713) Adding 'UMD1' VM to domain 'sg.freedom.com'...
+2020/09/16 22:12:18 INFO	VMDeploy.ps1:(735) 'UMD1' VM was added to domain 'sg.freedom.com' successsfully!
+2020/09/16 22:12:18 INFO	GenericFuncs.ps1:(57) Restart machine 'UMD1'.
+2020/09/16 22:13:07 SUCCESS	GenericFuncs.ps1:(68) machine 'UMD1' was restarted successfully.
+2020/09/16 22:13:07 INFO	VMDeploy.ps1:(846) Adding VM UMD1 to the cluster.
+2020/09/16 22:13:07 INFO	VMDeploy.ps1:(746) Adding VM 'UMD1' to the cluster.
+2020/09/16 22:13:14 SUCCESS	VMDeploy.ps1:(764) VM 'UMD1' was added to the cluster successfully!
+2020/09/16 22:13:14 SUCCESS	VMDeploy.ps1:(875) Finished deployment of 'UMD1' VM sucessfully.
+2020/09/16 22:13:14 SUCCESS	Deploy.ps1:(296) Deployment of Hyper-V VMs Finished successfully!
+***************************************************************************************************
+Log ended at: 2020/09/16 22:13:14.
+***************************************************************************************************
+
